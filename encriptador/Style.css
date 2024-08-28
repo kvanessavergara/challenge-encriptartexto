@@ -1,0 +1,169 @@
+/*Estilos Globales*/
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e2f2f7;
+    padding-top: 60px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.Logo {
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #004C4F;
+    font-size: 48px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #004C4F;
+}
+
+/*Estilos del Contenido*/
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.left-panel, .right-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 57%;
+    height: 700px;
+}
+
+.left-panel {
+    gap: 25px;
+}
+
+/*Estilos de Elementos*/
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #146F74;
+    box-sizing: border-box;
+}
+
+.buttons-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-encrypt {
+    background-color: #146F74;
+}
+
+.btn-encrypt:hover {
+    background-color: #004C4F;
+    transform: scale(1.08);
+}
+
+.btn-decrypt {
+    background-color: #66A7A3;
+}
+
+.btn-decrypt:hover {
+    background-color: #146F74;
+    transform: scale(1.08);
+}
+
+.btn-clear {
+    background-color: #f9b4b4;
+    color: #004C4F;
+}
+
+.btn-clear:hover {
+    background-color: #d86060;
+    color: #fff;
+    transform: scale(1.08);
+}
+
+.copy-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #66A7A3;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #146F74;
+    transform: scale(1.08);
+}
+
+/*Diseño Responsivo*/
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 8%;
+    }
+
+    .Logo {
+        justify-content: flex-start;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 5%;
+     }
+
+     .left-panel,
+     .right-panel {
+        width: 100%;
+        height: auto;
+     }
+}
